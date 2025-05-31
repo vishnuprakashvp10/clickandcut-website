@@ -10,7 +10,11 @@ export default {
         'auto':'repeat(auto-fill, minmax(200px, 1fr))'
       },
       colors:{
-        'primary':'linear-gradient(to right, #FB7CC9, #752AB8, #101B53)'
+        'primary': '#5F6FFF',
+        'pink-custom': '#FB7CC9',
+        'purple-custom': '#752AB8',
+        'blue-custom': '#101B53', 
+        'grey-custom': '#F4F4F4',
       }
     },
   },

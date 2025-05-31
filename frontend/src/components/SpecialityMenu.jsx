@@ -4,18 +4,25 @@ import { Link } from 'react-router-dom'
 
 const SpecialityMenu = () => {
     return (
-        <div id='speciality' className='flex flex-col items-center gap-4 py-16 text-[#262626]'>
-            <h1 className='text-3xl font-medium'>Find by Speciality</h1>
-            <p className='sm:w-1/3 text-center text-sm'>Simply browse through our extensive list of trusted doctors, schedule your appointment hassle-free.</p>
-            <div className='flex sm:justify-center gap-4 pt-5 w-full overflow-scroll '>
+        <section id='speciality' className='flex flex-col items-center gap-3 py-10 text-[#262626]'>
+            <h1 className='text-2xl sm:text-3xl font-semibold'>Find by Service</h1>
+            <p className='sm:w-1/3 text-center text-sm'>
+                Discover trusted salons and parlours around you. Choose your service and lock in your time.
+            </p>
+            <div className='flex flex-wrap justify-center gap-4 pt-4 w-full'>
                 {specialityData.map((item, index) => (
-                    <Link to={`/doctors/${item.speciality}`} onClick={() => scrollTo(0, 0)} className='flex flex-col items-center text-xs cursor-pointer flex-shrink-0 hover:translate-y-[-10px] transition-all duration-500' key={index}>
-                        <img className='w-16 sm:w-24 mb-2 ' src={item.image} alt="" />
-                        <p>{item.speciality}</p>
+                    <Link
+                        to={`/doctors/${item.speciality}`}
+                        onClick={() => scrollTo(0, 0)}
+                        className='flex flex-col items-center text-xs cursor-pointer hover:translate-y-[-8px] transition-all duration-300'
+                        key={index}
+                    >
+                        <img className='w-16 sm:w-24 mb-2' src={item.image} alt={item.speciality} />
+                        <p className='font-semibold'>{item.speciality}</p>
                     </Link>
                 ))}
             </div>
-        </div>
+        </section>
     )
 }
 
