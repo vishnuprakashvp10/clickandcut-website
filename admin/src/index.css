@@ -10,3 +10,28 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+.calendar-container {
+  width: 100%;
+  max-width: 400px;     /* max width for desktop */
+  margin: 0 auto;       /* center horizontally */
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Override react-calendar default width */
+.react-calendar {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .calendar-container {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+  .react-calendar {
+    font-size: 0.85rem;
+  }
+}
