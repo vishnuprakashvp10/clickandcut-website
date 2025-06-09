@@ -15,7 +15,7 @@ const TopParlours = () => {
 
     return (
         <div className='mt-14'>
-            <div className='flex flex-col bg-grey-custom my-5 p-6 text-[#262626] rounded-lg px-6 md:px-10 lg:px-20'>
+            <div className='flex flex-col bg-gray-50 my-5 p-6 text-[#262626] rounded-lg px-6 md:px-10 lg:px-20'>
                 <div className='flex justify-between items-center py-4'>
                     <h1 className='text-2xl sm:text-3xl font-semibold'>Book a Parlour Near You</h1>
                     <p

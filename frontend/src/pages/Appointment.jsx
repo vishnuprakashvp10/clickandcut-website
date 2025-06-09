@@ -183,7 +183,7 @@ const Appointment = () => {
             {/* Listing Releated Doctors */}
             <RelatedDoctors speciality={docInfo.speciality} docId={docId} />
         </div>
-    ) : null
+    ) : null 
 }
 
 export default Appointment
