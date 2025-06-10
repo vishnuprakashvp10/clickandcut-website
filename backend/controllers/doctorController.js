@@ -111,7 +111,7 @@ const changeAvailablity = async (req, res) => {
         const docData = await doctorModel.findById(docId)
         await doctorModel.findByIdAndUpdate(docId, { available: !docData.available })
         res.json({ success: true, message: 'Availablity Changed' })
-
+ 
     } catch (error) {
         console.log(error)
         res.json({ success: false, message: error.message })

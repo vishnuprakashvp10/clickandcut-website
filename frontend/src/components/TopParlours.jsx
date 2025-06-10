@@ -35,7 +35,7 @@ const TopParlours = () => {
                         <div
                             onClick={() => { navigate(`/appointment/${item._id}`); scrollTo(0, 0) }}
                             className='min-w-[200px] sm:min-w-[250px] border border-[#C9D8FF] rounded-xl overflow-hidden cursor-pointer flex-shrink-0 hover:translate-y-[-10px] transition-all duration-500'
-                            key={index}
+                            key={index} 
                         >
                             <img className='bg-[#EAEFFF] w-full h-[150px] object-cover' src={item.image} alt="" />
                             <div className='p-4'>

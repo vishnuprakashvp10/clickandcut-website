@@ -15,6 +15,6 @@ const doctorSchema = new mongoose.Schema({
     address: { type: Object, required: true },
     date: { type: Number, required: true },
 }, { minimize: false })
-
+ 
 const doctorModel = mongoose.models.doctor || mongoose.model("doctor", doctorSchema);
 export default doctorModel;
